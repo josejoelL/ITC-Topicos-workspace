@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.crud.MainActivity">
+    <item
+        android:id="@+id/opMenuRecuperar"
+        android:orderInCategory="101"
+        android:title="Recuperar" />
+    <item
+        android:id="@+id/opMenuGrabar"
+        android:orderInCategory="102"
+        android:title="Grabar" />
+    <item
+        android:id="@+id/opMenuBorrar"
+        android:orderInCategory="103"
+        android:title="Borrar" />
+    <item
+        android:id="@+id/opMenuActualizar"
+        android:orderInCategory="104"
+        android:title="Actualizar" />
+</menu>
