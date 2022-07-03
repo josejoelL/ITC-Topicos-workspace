@@ -41,8 +41,8 @@ https://github.com/josejoelL/ITC-Topicos-workspace/blob/main/ESCALADORES-JUEGO/
   Imagen de lo que se hizo
   
 ## proyectos-personales
-  ![ejemplo](https://github.com/josejoelL/ITC-Topicos-workspace/blob/main/PROYECTOS_PERSONALES/mini_java/example.gif)
-   <img src="https://github.com/josejoelL/ITC-Topicos-workspace/blob/main/PROYECTOS_PERSONALES/mini_java/example.gif" width="400" height="400" />
+    Solo se uso java con swing para esta interfaz
+   <img src="https://github.com/josejoelL/ITC-Topicos-workspace/blob/main/PROYECTOS_PERSONALES/mini_java/example.gif" width="600" height="600" />
 ## swing
   Imagen de lo que se hizo
   
