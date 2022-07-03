@@ -20,8 +20,8 @@ Proyectos, ejercios y examenes de la materia de tópicos avanzados en java
 ## esambladora
  
   ![Alt Text](https://github.com/josejoelL/ITC-Topicos-workspace/blob/main/ENSAMBLADORA-NISSAN/Animation.gif)
-   <img src="https://github.com/josejoelL/ITC-Topicos-workspace/blob/main/ENSAMBLADORA-NISSAN/a.png" width="400" height="800" />
-    <img src="https://github.com/josejoelL/ITC-Topicos-workspace/blob/main/ENSAMBLADORA-NISSAN/b.png" width="400" height="800" />
+   <img src="https://github.com/josejoelL/ITC-Topicos-workspace/blob/main/ENSAMBLADORA-NISSAN/a.png" />
+    <img src="https://github.com/josejoelL/ITC-Topicos-workspace/blob/main/ENSAMBLADORA-NISSAN/b.png" />
   
 ## hilos
   Imagen de lo que se hizo
