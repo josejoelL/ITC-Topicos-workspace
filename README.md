@@ -34,7 +34,7 @@ Proyectos, ejercios y examenes de la materia de tópicos avanzados en java
   
 ## tinaco
   Imagen de lo que se hizo
-  ![Alt Text](https://github.com/josejoelL/ITC-Topicos-workspace/blob/main/TINACO-EXAMEN/Animation.gif)
+  ![Alt Text](<img src="https://github.com/josejoelL/ITC-Topicos-workspace/blob/main/TINACO-EXAMEN/Animation.gif" width="100" height="200" />)
   
   
 ## toyota-android
