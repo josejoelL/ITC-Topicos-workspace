@@ -17,11 +17,13 @@ Proyectos, ejercios y examenes de la materia de tópicos avanzados en java
 ## componentes
   Imagen de lo que se hizo
 
-##escaladores
+## escaladores
 https://github.com/josejoelL/ITC-Topicos-workspace/blob/main/ESCALADORES-JUEGO/
+<br>
  <img src="https://github.com/josejoelL/ITC-Topicos-workspace/blob/main/ESCALADORES-JUEGO/example.gif" width="800" height="400" />
 
- <img src="https://github.com/josejoelL/ITC-Topicos-workspace/blob/main/ESCALADORES-JUEGO/Pantalla_Landeros.png" width="800" height="200" />
+
+   ![Alt Text](https://github.com/josejoelL/ITC-Topicos-workspace/blob/main/ESCALADORES-JUEGO/Pantalla_Landeros.png)
 ## esambladora
  https://github.com/josejoelL/ITC-Topicos-workspace/blob/main/ENSAMBLADORA-NISSAN/
  <img src="https://github.com/josejoelL/ITC-Topicos-workspace/blob/main/ENSAMBLADORA-NISSAN/nissonpixel.png" alt="NISSON"
