@@ -42,7 +42,7 @@ https://github.com/josejoelL/ITC-Topicos-workspace/blob/main/ESCALADORES-JUEGO/
   
 ## proyectos-personales
   ![ejemplo](https://github.com/josejoelL/ITC-Topicos-workspace/blob/main/PROYECTOS_PERSONALES/mini_java/example.gif)
-  
+   <img src="https://github.com/josejoelL/ITC-Topicos-workspace/blob/main/PROYECTOS_PERSONALES/mini_java/example.gif" width="400" height="400" />
 ## swing
   Imagen de lo que se hizo
   
