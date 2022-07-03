@@ -41,7 +41,7 @@ https://github.com/josejoelL/ITC-Topicos-workspace/blob/main/ESCALADORES-JUEGO/
   Imagen de lo que se hizo
   
 ## proyectos-personales
-  Imagen de lo que se hizo
+  ![ejemplo](https://github.com/josejoelL/ITC-Topicos-workspace/blob/main/PROYECTOS_PERSONALES/mini_java/example.gif)
   
 ## swing
   Imagen de lo que se hizo
