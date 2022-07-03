@@ -14,26 +14,26 @@ Proyectos, ejercios y examenes de la materia de tópicos avanzados en java
 * [TINACO-EXAMEN](#tinaco)
 * [TOYOTA-ANDROID](#toyota-android)
 
-##componentes
+## componentes
   Imagen de lo que se hizo
 
-##esambladora
+## esambladora
   Imagen de lo que se hizo
   
-##hilos
+## hilos
   Imagen de lo que se hizo
   
-##mvc
+## mvc
   Imagen de lo que se hizo
   
-##proyectos-personales
+## proyectos-personales
   Imagen de lo que se hizo
   
-##swing
+## swing
   Imagen de lo que se hizo
   
-##tinaco
+## tinaco
   Imagen de lo que se hizo
   
-##toyota-android
+## toyota-android
   Imagen de lo que se hizo
