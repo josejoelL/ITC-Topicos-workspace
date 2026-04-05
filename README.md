@@ -1,10 +1,12 @@
 # ITC-Topicos-workspace
-Proyectos, ejercios y examenes de la materia de tópicos avanzados en java
+Proyectos, ejercios y examenes de la materia de tópicos avanzados en java tante del tec de culiacan como de universidad coppel
 
 ## Table of Contents
 
 
 * [COMPONENTES](#componentes)
+* [NUTRIOLOGOS SYSTEMS](#nutriologo)
+* [DEPOSITO/RETIRO SYSTEMS](#depocito/retiro)
 * [ENSAMBLADORA-NISSAN](#esambladora)
 * [ESCALADORES-JUEGO](#escaladores)
 * [HILOS](#hilos)
@@ -16,6 +18,10 @@ Proyectos, ejercios y examenes de la materia de tópicos avanzados en java
 
 ## componentes
   Imagen de lo que se hizo
+
+## nutriologo
+
+## depocito/retiro
 
 ## escaladores
 https://github.com/josejoelL/ITC-Topicos-workspace/blob/main/ESCALADORES-JUEGO/
