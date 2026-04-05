@@ -23,6 +23,8 @@ Proyectos, ejercios y examenes de la materia de tópicos avanzados en java tante
 
 ## depocito/retiro
 
+<img src="https://github.com/josejoelL/ITC-Topicos-workspace/BANCO_MYSQL/capturadereferencia.PNG"  />
+
 ## escaladores
 https://github.com/josejoelL/ITC-Topicos-workspace/blob/main/ESCALADORES-JUEGO/
 <br>
