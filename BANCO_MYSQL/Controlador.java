@@ -1,3 +1,8 @@
+/**
+ * Fecha: 4 Abril 2026 autor: Landeros Santos Jose Joel
+ * 
+ **/
+
 package sistemabancario;
 
 
@@ -32,17 +37,11 @@ public class Controlador implements ActionListener,FocusListener {
 		if(Evt.getSource()==Vista.getBotonContinuar()){
 			int opcion = Vista.getOpcion();
 			switch (opcion){
-                            case 1: Vista.abrirPanelDepocito();
-                                break;
-                            case 2:Vista.abrirPanelRetiro();
-                                break;
-                            case 3:
-                                break;
-                            case 4:
-                                break;
-                            
+                            case 1 -> Vista.abrirPanelDepocito();
+                            case 2 -> Vista.abrirPanelRetiro();
+                            case 3 -> AbrirPanelConsultarSaldo();
+                            case 4 -> Vista.abrirPanelSalir();
                         }	
-                        
 			 return;
 		}
                 if(Evt.getSource() == Vista.getBotonDepositar() ){
@@ -114,6 +113,12 @@ public class Controlador implements ActionListener,FocusListener {
             Vista.getTextFieldDepocito().setText("$");
             
     }
+    }
+
+    private void AbrirPanelConsultarSaldo() {
+       int saldoActual = Modelo.getSaldo();
+        Vista.setLabelSaldo(saldoActual);
+        Vista.abrirPanelSaldo(); 
     }
 }
 

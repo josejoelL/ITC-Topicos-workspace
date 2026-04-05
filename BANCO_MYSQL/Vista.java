@@ -1,10 +1,10 @@
-package sistemabancario;
-
-
 /**
  * Fecha: 3 Abril 2026 autor: Landeros Santos Jose Joel
  * 
  **/
+package sistemabancario;
+
+
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.FlowLayout;
@@ -23,7 +23,7 @@ public class Vista extends JFrame {
     private JPanel principal,panelSur,panelDepocito,PanelRetiro;
     private JPanel pTextosDepocito;
     private JPanel pCentroDepocito,pSurDepocito;
-    private JLabel LabelInfo;
+    private JLabel LabelInfo, labelTitulo;
     
     private JButton BotonContinuar,BotonDepocitar,BotonRegresarDepocito;
     
@@ -35,16 +35,20 @@ public class Vista extends JFrame {
          private JTextField TextFieldRetiro;
          
          private JButton BotonRegresar;
+         
+         
+         private JPanel PanelSaldo;
+         private JLabel LabelSaldo;
 
 	public Vista(){
-		//super(" HOSPITAL IMC ");
+		super("banco msql");
                 UIWindows_10();
                 IdPanel = 0;
                
 		HazInterfazMain();
                 HazInterfazDepocito();
                 HazInterfazRetiro();
-                
+                HazInterfazSaldo();
 	}
 	private void HazInterfazMain(){
 		setSize(400,400);
@@ -101,20 +105,30 @@ public class Vista extends JFrame {
     
                 
                 
-                 PanelRetiro.setLayout(new FlowLayout());
-                  pCentroRetiro = new JPanel(new FlowLayout());
+                PanelRetiro.setLayout(new FlowLayout());
+                pCentroRetiro = new JPanel(new FlowLayout());
                  
+                PanelSaldo= new JPanel(new FlowLayout());
+                PanelSaldo.setBackground(Color.white);
+                PanelSaldo.add(new JLabel("<html><p style='font-size:14px;'>Monto actual de su saldo: </p></html>", SwingConstants.CENTER));
                    
-                      
+                LabelSaldo = new JLabel("$             ", 
+                    SwingConstants.LEFT
+                );
+                LabelSaldo.setBackground(Color.white);
+                LabelSaldo.setFont(new Font("arial", 1, 18));
+                LabelSaldo.setForeground(new Color(0, 102, 51)); 
+                
+                PanelSaldo.add(LabelSaldo);
+                
+           
       
                 
               
+                
                 TextFieldRetiro = new JTextField("$", 12);
                 
-               
-           
-                
-                
+
 		principal.setLayout(new GridLayout(0,1,0,5));
 		panelSur.setLayout(new FlowLayout(FlowLayout.RIGHT));
 		
@@ -149,12 +163,12 @@ public class Vista extends JFrame {
                 
                 
                 
-                LabelInfo = new JLabel(
-                    "<html><table style=\'width: 100%; font-size:14px;  \'>" +
-                    "<tr><td>1.- Deposito.</td></tr>" +
-                    "<tr><td>2.- Retiro. </td></tr>" +
-                    "<tr><td>3.- </td></tr>" +
-                    "<tr><td>4.- </td></tr>" +
+             LabelInfo = new JLabel(
+                    "<html><table style='width: 100%; font-size:14px;'>" +
+                    "<tr><td style='color: blue;'>1.- Deposito.</td></tr>" +
+                    "<tr><td style='color: red;'>2.- Retiro. </td></tr>" +
+                    "<tr><td style='color: green;'>3.- Saldo </td></tr>" +
+                    "<tr><td style='color: gray;'>4.- Salir </td></tr>" +
                     "</table></html>", 
                     SwingConstants.LEFT
                 );
@@ -163,8 +177,22 @@ public class Vista extends JFrame {
                 LabelInfo.setBackground(Color.white);
                 LabelInfo.setFont(new Font("arial", 1, 12));
                 LabelInfo.setForeground(Color.gray);   
-                
-                add(new JLabel("<html><p style=\"font-size:14px;\">Banco Mexicano</p><body>",SwingConstants.CENTER),BorderLayout.NORTH);
+                String textoBanco = "<html><body style='background-color: white; padding: 10px;'>" +
+                        "<h2 style='margin: 0;'>" +
+                            "<span style='color: #006847;'>BANCO</span>" + 
+                            "<span style='color: #333333;'> MEXI</span>" + 
+                            "<span style='color: #CE1126;'>CANO</span>" +
+                        "</h2>" +
+                        "<hr style='border: 1; height: 4px; background: #006847;'>" +
+                    "</body></html>";
+                labelTitulo = new JLabel(textoBanco, SwingConstants.LEFT);
+
+            
+              labelTitulo.setOpaque(true); 
+              labelTitulo.setBackground(Color.WHITE); 
+
+              add(labelTitulo, BorderLayout.NORTH);
+               
                 principal.add(LabelInfo);
                 
 		add(principal,BorderLayout.CENTER);
@@ -228,7 +256,7 @@ public class Vista extends JFrame {
     //TextFieldDepocito.requestFocusInWindow();
 }
 
-    void abrirPanelRetiro() {
+    public void abrirPanelRetiro() {
     IdPanel = 2;
      remove(principal);
     PanelRetiro.removeAll(); 
@@ -237,7 +265,33 @@ public class Vista extends JFrame {
     revalidate(); 
     repaint();
     }
+    
+    public void abrirPanelSaldo(){
+    IdPanel = 3;
+    
+    remove(principal);
+    PanelSaldo.removeAll(); 
+    HazInterfazSaldo();
+    add(PanelSaldo);
+    revalidate(); 
+    repaint();
+    
+    }
+    public void abrirPanelSalir(){
+     int respuesta = JOptionPane.showConfirmDialog(this, 
+            "Esta apunto de cerrar la aplicacion \n\n¿Esta Seguro que decea Salir?", 
+            "Se ha guardado Datos Correctamente", 
+            JOptionPane.YES_NO_OPTION, 
+            JOptionPane.INFORMATION_MESSAGE);
 
+        
+        if (respuesta == JOptionPane.YES_OPTION) {
+
+            System.exit(0); 
+        }
+    }       
+            
+            
     JTextField getTextFieldDepocito() {
     return TextFieldDepocito;
     }
@@ -366,8 +420,9 @@ public class Vista extends JFrame {
                     if (panelactual == 2){
                     remove(PanelRetiro);
                     }
-                    // principal.removeAll(); 
-                     //HazInterfazDepocito();
+                     if (panelactual == 3){
+                    remove(PanelSaldo);
+                    }
                      add(principal);
                      revalidate(); 
                      repaint();
@@ -382,7 +437,16 @@ public class Vista extends JFrame {
    
         IdPanel = idActual;
   }      
-  
+  public void setLabelSaldo (int SaldoActual){
+      LabelSaldo.setText("$: "+SaldoActual+".00");
+  }
+
+    private void HazInterfazSaldo() {
+    PanelSaldo.add(new JLabel("<html><p style='font-size:14px;'>Monto actual de su saldo: </p></html>", SwingConstants.CENTER));
+    PanelSaldo.add(LabelSaldo);
+    PanelSaldo.add(BotonRegresar); 
+    
+      }
 }
 
 

@@ -1,3 +1,7 @@
+/**
+ * Fecha: 4 Abril 2026 autor: Landeros Santos Jose Joel
+ * 
+ **/
 package sistemabancario;
 
 import java.sql.Connection;

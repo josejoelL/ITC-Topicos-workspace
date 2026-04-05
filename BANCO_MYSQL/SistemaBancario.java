@@ -1,3 +1,7 @@
+/**
+ * Fecha: 3 Abril 2026 autor: Landeros Santos Jose Joel
+ * 
+ **/
 package sistemabancario;
 
 
